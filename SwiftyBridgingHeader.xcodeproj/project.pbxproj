@@ -47,6 +47,7 @@
 		150470AA1C68904F0068E240 /* SwiftyBridgingHeaderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwiftyBridgingHeaderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		150470AE1C68904F0068E240 /* SwiftyBridgingHeaderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftyBridgingHeaderUITests.swift; sourceTree = "<group>"; };
 		150470B01C68904F0068E240 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		150470BC1C6890660068E240 /* Swifty-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Swifty-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 		1504708D1C68904F0068E240 /* SwiftyBridgingHeader */ = {
 			isa = PBXGroup;
 			children = (
+				150470BC1C6890660068E240 /* Swifty-Bridging-Header.h */,
 				1504708E1C68904F0068E240 /* AppDelegate.swift */,
 				150470901C68904F0068E240 /* ViewController.swift */,
 				150470921C68904F0068E240 /* Main.storyboard */,
@@ -403,6 +405,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Appirio.SwiftyBridgingHeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBridgingHeader/Swifty-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -414,6 +417,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.Appirio.SwiftyBridgingHeader;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SwiftyBridgingHeader/Swifty-Bridging-Header.h";
 			};
 			name = Release;
 		};
